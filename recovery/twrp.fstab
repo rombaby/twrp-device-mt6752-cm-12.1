@@ -1,0 +1,10 @@
+/boot           emmc        /dev/block/platform/mtk-msdc.0/by-name/boot         flags=display="内核分区(boot)"
+/recovery       emmc        /dev/block/platform/mtk-msdc.0/by-name/recovery
+/misc           emmc        /dev/block/platform/mtk-msdc.0/by-name/para
+/system         ext4        /dev/block/platform/mtk-msdc.0/by-name/system       flags=display="系统分区(system)"
+/data           ext4        /dev/block/platform/mtk-msdc.0/by-name/userdata     length=-16384
+/cache          ext4        /dev/block/platform/mtk-msdc.0/by-name/cache         flags=display="缓存分区(cache)"
+/nvram          emmc        /dev/block/platform/mtk-msdc.0/by-name/nvram        flags=display="Nvram";backup=1
+/external_sd   vfat        /dev/block/mmcblk1p1                                flags=fsflags=utf8;display="外置SD卡(external_sd)";storage;wipeingui;removable
+/usbstorage     vfat        /dev/block/sda1     /dev/block/sda                  flags=fsflags=utf8;display="OTG-U盘(usbdisk)";storage;removable
+
